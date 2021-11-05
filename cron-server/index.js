@@ -9,7 +9,7 @@ Web3.providers.HttpProvider("https://ropsten.infura.io");
 
 cron.schedule('* * * * *', async () => {
 
-  sendTx();
+  await sendTx();
 
 });
 
@@ -27,7 +27,7 @@ async function sendTx() {
 
   const silly_squares_club_address = '0xec1788ebe33186e91aa281029025671b553e166c';
 
-  sillySquaresContract = new ethers.Contract(silly_squares_club_address, SillySqauresABI, signer);
+  const sillySquaresContract = new ethers.Contract(silly_squares_club_address, SillySqauresABI, signer);
 
   const sillySquareCost = (await sillySquaresContract.cost()).toString();
   console.log({ sillySquareCost })
