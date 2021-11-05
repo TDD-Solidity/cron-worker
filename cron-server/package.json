@@ -1,0 +1,21 @@
+{
+  "name": "cron-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "JimLynchCodes <jim.lynch@evaluates2.com> (https://evaluates2.com)",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ethereumjs-tx": "^2.1.2",
+    "ethers": "^5.5.1",
+    "node-cron": "^3.0.0",
+    "solc": "^0.8.9",
+    "web3": "^1.6.0"
+  }
+}
