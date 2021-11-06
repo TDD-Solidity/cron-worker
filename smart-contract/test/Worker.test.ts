@@ -27,6 +27,6 @@ describe("Worker", function () {
 
         });
 
-    })
+    });
         
 });
